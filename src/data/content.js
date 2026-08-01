@@ -23,7 +23,6 @@ export const hero = {
     "Whether you're navigating anxiety, untangling relationship dynamics, or just trying to understand your own mind a little better, therapy with Hruthika is a steady, collaborative space to work through it — at your pace.",
   cta: 'Book a session',
   reassurance: 'Online & in-person · English & Telugu',
-  photoAlt: 'Hruthika Ambati, counselling psychologist, smiling warmly',
 }
 
 export const about = {

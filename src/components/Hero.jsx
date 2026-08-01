@@ -1,6 +1,5 @@
 import { hero, site } from '../data/content'
-import { photoSrc } from '../lib/photo'
-import Blob from './Blob'
+import growingMind from '../assets/growing-mind.svg'
 
 function Hero() {
   return (
@@ -25,22 +24,11 @@ function Hero() {
         </div>
 
         <div className="relative mx-auto aspect-square w-full max-w-sm animate-fade-up">
-          <Blob className="absolute inset-0 h-full w-full scale-150 text-lilac/60" />
-          {photoSrc ? (
-            <img
-              src={photoSrc}
-              alt={hero.photoAlt}
-              className="relative h-full w-full rounded-3xl object-cover shadow-lg"
-            />
-          ) : (
-            <div
-              role="img"
-              aria-label={hero.photoAlt}
-              className="relative flex h-full w-full items-center justify-center rounded-3xl bg-powder text-center text-ink/50 shadow-lg"
-            >
-              Photo coming soon
-            </div>
-          )}
+          <img
+            src={growingMind}
+            alt="Illustration of a head in profile with a small plant growing inside it"
+            className="h-full w-full object-contain"
+          />
         </div>
       </div>
     </section>

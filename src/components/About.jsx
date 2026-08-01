@@ -1,6 +1,5 @@
 import { about } from '../data/content'
 import { photoSrc } from '../lib/photo'
-import Blob from './Blob'
 import ChipGroup from './ChipGroup'
 
 function About() {
@@ -8,18 +7,17 @@ function About() {
     <section id="about" className="bg-lilac/10">
       <div className="mx-auto grid max-w-5xl gap-12 px-6 py-16 md:grid-cols-2 md:items-center md:py-24">
         <div className="relative mx-auto aspect-square w-full max-w-xs animate-fade-up">
-          <Blob className="absolute inset-0 h-full w-full scale-150 text-rose/60" />
           {photoSrc ? (
             <img
               src={photoSrc}
               alt={about.photoAlt}
-              className="relative h-full w-full rounded-3xl object-cover shadow-lg"
+              className="h-full w-full rounded-3xl object-cover shadow-lg"
             />
           ) : (
             <div
               role="img"
               aria-label={about.photoAlt}
-              className="relative flex h-full w-full items-center justify-center rounded-3xl bg-powder text-center text-ink/50 shadow-lg"
+              className="flex h-full w-full items-center justify-center rounded-3xl bg-powder text-center text-ink/50 shadow-lg"
             >
               Photo coming soon
             </div>

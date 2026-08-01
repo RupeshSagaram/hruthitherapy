@@ -54,14 +54,13 @@ src/
 │   └── photo.js            # loads hruthika.jpg if present, else undefined
 └── components/
     ├── Nav.jsx              # sticky nav, collapses to a mobile menu
-    ├── Hero.jsx              # headline, CTA, photo + blob accent
+    ├── Hero.jsx              # headline, CTA, photo, illustration accents
     ├── About.jsx             # bio, language / mode-of-therapy chips
     ├── Areas.jsx             # "areas I can help with" card grid
     ├── HowIWork.jsx          # the 5 therapeutic approaches, explained plainly
     ├── FirstSession.jsx      # what a first session looks like, 3 steps
     ├── Contact.jsx           # hours, mode chips, booking CTA
     ├── Footer.jsx            # name, profile link, copyright, crisis note
-    ├── Blob.jsx               # reusable organic accent shape
     └── ChipGroup.jsx          # small labelled pill group (languages, modes)
 ```
 
@@ -84,10 +83,9 @@ Defined as Tailwind v4 `@theme` tokens in `src/index.css`.
 - Headings — [Quicksand](https://fonts.google.com/specimen/Quicksand) (weights 500/600/700 only)
 - Body — [Inter](https://fonts.google.com/specimen/Inter), 17px minimum, generous line height
 
-**Recurring visual signature:** a soft, hand-drawn-feeling organic "blob"
-shape (`Blob.jsx`) sits behind her photo in the Hero and About sections,
-alternating accent color — a deliberate departure from generic hard-edged
-template shapes.
+**Illustration accent:** a small circular illustration
+(`src/assets/growing-mind.svg`) sits as a badge on her Hero photo, purely
+decorative (`alt=""`, `aria-hidden="true"`).
 
 **Motion:** a single restrained `fade-up` keyframe, used sparingly, and
 disabled automatically for visitors with `prefers-reduced-motion` set.
