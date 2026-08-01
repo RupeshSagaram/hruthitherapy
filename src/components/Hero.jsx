@@ -23,7 +23,7 @@ function Hero() {
           <p className="mt-4 text-sm text-ink/60">{hero.reassurance}</p>
         </div>
 
-        <div className="relative mx-auto aspect-square w-full max-w-sm animate-fade-up">
+        <div className="relative mx-auto aspect-square w-full max-w-[clamp(200px,45vw,24rem)] animate-fade-up">
           <img
             src={growingMind}
             alt="Illustration of a head in profile with a small plant growing inside it"
