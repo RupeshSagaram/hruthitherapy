@@ -24,7 +24,7 @@ export const hero = {
   subline:
     "Whether you're navigating anxiety, untangling relationship dynamics, or just trying to understand your own mind a little better, therapy with Hruthika is a steady, collaborative space to work through it — at your pace.",
   cta: 'Book a session',
-  reassurance: 'Online & in-person · English & Telugu',
+  reassurance: 'Online · English & Telugu',
 }
 
 export const about = {
@@ -35,7 +35,7 @@ export const about = {
   ],
   photoAlt: 'Portrait of Hruthika Ambati',
   languages: ['English', 'Telugu'],
-  modes: ['Online', 'In-person'],
+  modes: ['Online'],
 }
 
 export const areas = {
@@ -138,7 +138,8 @@ export const contact = {
   intro: 'Reach out whenever feels right — there’s no wrong time.',
   hoursLabel: 'Working hours',
   hours: 'Monday to Friday, 11:00 AM – 6:00 PM',
-  cta: 'Book a session',
+  bookingIframeTitle: 'Book a session with Hruthika Ambati — Google Calendar scheduling',
+  bookingFallbackLabel: 'Trouble booking above? Open the scheduler in a new tab ↗',
 }
 
 export const footer = {

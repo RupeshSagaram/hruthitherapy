@@ -22,9 +22,7 @@ function Nav() {
             </a>
           ))}
           <a
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="rounded-full bg-rose px-5 py-2.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
           >
             {nav.cta}
@@ -75,9 +73,7 @@ function Nav() {
             </a>
           ))}
           <a
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="rounded-full bg-rose px-5 py-2.5 text-center font-display font-semibold text-ink transition-opacity hover:opacity-90"
             onClick={() => setOpen(false)}
           >

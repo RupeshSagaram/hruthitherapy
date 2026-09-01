@@ -20,15 +20,6 @@ function Contact() {
             <ChipGroup label="Mode of therapy" items={about.modes} />
           </div>
 
-          <a
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
-          >
-            {contact.cta}
-          </a>
-
           {/*
             TODO: once the client provides an email address, add it here, e.g.:
             <p className="mt-4 text-sm text-ink/60">
@@ -36,6 +27,23 @@ function Contact() {
             </p>
           */}
         </div>
+
+        <div className="mt-8 animate-fade-up overflow-hidden rounded-3xl bg-background/80 p-2 shadow-sm">
+          <iframe
+            src={site.bookingUrl}
+            title={contact.bookingIframeTitle}
+            className="h-150 w-full rounded-2xl border-0"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href={site.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block text-sm text-ink/60 underline underline-offset-2 hover:text-ink"
+        >
+          {contact.bookingFallbackLabel}
+        </a>
       </div>
     </section>
   )

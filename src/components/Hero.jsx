@@ -1,4 +1,4 @@
-import { hero, site } from '../data/content'
+import { hero } from '../data/content'
 import growingMind from '../assets/growing-mind.svg'
 
 function Hero() {
@@ -13,9 +13,7 @@ function Hero() {
             {hero.subline}
           </p>
           <a
-            href={site.bookingUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="mt-8 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
           >
             {hero.cta}
