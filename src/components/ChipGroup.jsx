@@ -1,10 +1,10 @@
-function ChipGroup({ label, items }) {
+function ChipGroup({ label, items, center = false }) {
   return (
-    <div>
+    <div className={center ? 'text-center' : ''}>
       <p className="text-sm font-semibold tracking-wide text-ink/50 uppercase">
         {label}
       </p>
-      <div className="mt-2 flex flex-wrap gap-2">
+      <div className={`mt-2 flex flex-wrap gap-2 ${center ? 'justify-center' : ''}`}>
         {items.map((item) => (
           <span
             key={item}

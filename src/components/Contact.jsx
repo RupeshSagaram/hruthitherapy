@@ -18,7 +18,7 @@ function Contact() {
             <p className="mt-1 text-[17px] text-ink/80">{contact.hours}</p>
 
             <div className="mt-6 flex justify-center">
-              <ChipGroup label="Mode of therapy" items={about.modes} />
+              <ChipGroup label="Mode of therapy" items={about.modes} center />
             </div>
 
             {/*
