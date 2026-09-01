@@ -13,14 +13,6 @@ function Footer() {
         <div className="mt-10 flex flex-col items-center gap-2 text-center">
           <p className="font-display text-lg font-semibold">{site.name}</p>
           <p className="text-background/70">{site.title}</p>
-          <a
-            href={site.profileUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2 hover:text-rose"
-          >
-            {footer.profileLinkLabel}
-          </a>
         </div>
 
         <p className="mt-8 text-center text-sm text-background/50">

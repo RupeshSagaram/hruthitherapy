@@ -3,8 +3,7 @@
 
 export const site = {
   name: 'Hruthika Ambati',
-  title: 'Counselling Psychologist, Manospandana',
-  profileUrl: 'https://manospandana.in/our-psychologists/hruthika/',
+  title: 'Counselling Psychologist',
   bookingUrl:
     'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1iQVb0lCsUsReEDFrp7TlYerBuGlXiteVIKQuQdsbbU42K-Mbssq_0MdViISbEqtmcfr21S5ep?gv=true',
 }
@@ -145,5 +144,4 @@ export const contact = {
 export const footer = {
   crisisNote:
     'This website is not an emergency service. If you are in crisis in India, you can call Tele-MANAS at 14416 — free and available 24×7.',
-  profileLinkLabel: 'View full profile',
 }
