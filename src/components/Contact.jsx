@@ -21,7 +21,7 @@ function Contact() {
           </div>
 
           <a
-            href={site.profileUrl}
+            href={site.bookingUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"

@@ -5,6 +5,8 @@ export const site = {
   name: 'Hruthika Ambati',
   title: 'Counselling Psychologist, Manospandana',
   profileUrl: 'https://manospandana.in/our-psychologists/hruthika/',
+  bookingUrl:
+    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1iQVb0lCsUsReEDFrp7TlYerBuGlXiteVIKQuQdsbbU42K-Mbssq_0MdViISbEqtmcfr21S5ep?gv=true',
 }
 
 export const nav = {
