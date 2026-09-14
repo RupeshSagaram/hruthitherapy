@@ -9,12 +9,9 @@ function Hero() {
           <h1 className="font-display text-4xl font-semibold leading-tight text-ink md:text-5xl">
             {hero.headline}
           </h1>
-          <p className="mt-6 max-w-md text-lg leading-relaxed text-ink/80">
-            {hero.subline}
-          </p>
           <a
             href="#contact"
-            className="mt-8 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
+            className="mt-10 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
           >
             {hero.cta}
           </a>

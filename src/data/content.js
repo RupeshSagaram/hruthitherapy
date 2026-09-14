@@ -20,8 +20,6 @@ export const nav = {
 
 export const hero = {
   headline: "You don't have to have it figured out before you reach out.",
-  subline:
-    "Whether you're navigating anxiety, untangling relationship dynamics, or just trying to understand your own mind a little better, therapy with Hruthika is a steady, collaborative space to work through it — at your pace.",
   cta: 'Book a session',
   reassurance: 'Online · English & Telugu',
 }
