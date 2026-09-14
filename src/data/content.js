@@ -130,13 +130,26 @@ export const firstSession = {
   ],
 }
 
-export const contact = {
-  heading: 'Availability & contact',
+export const availability = {
+  heading: 'Availability',
   intro: 'Reach out whenever feels right — there’s no wrong time.',
   hoursLabel: 'Working hours',
-  hours: 'Monday to Friday, 11:00 AM – 6:00 PM',
+  hours: 'Sunday to Friday, 9:00 AM – 7:00 PM',
   bookingIframeTitle: 'Book a session with Hruthika Ambati — Google Calendar scheduling',
   bookingFallbackLabel: 'Trouble booking above? Open the scheduler in a new tab ↗',
+}
+
+export const contact = {
+  heading: 'Contact',
+  intro: 'Prefer to reach out directly? Here’s how.',
+  phoneLabel: 'Phone',
+  phone: '+91 78925 30172',
+  phoneHref: 'tel:+917892530172',
+  emailLabel: 'Email',
+  email: 'hruthikaambati1101@gmail.com',
+  linkedinLabel: 'LinkedIn',
+  linkedinDisplay: 'View LinkedIn profile ↗',
+  linkedinUrl: 'https://www.linkedin.com/in/ambati-v-hruthika/',
 }
 
 export const footer = {

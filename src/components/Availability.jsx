@@ -1,0 +1,47 @@
+import { about, availability, site } from '../data/content'
+import ChipGroup from './ChipGroup'
+
+function Availability() {
+  return (
+    <section id="availability" className="bg-rose/10">
+      <div className="mx-auto max-w-5xl px-6 py-16 text-center md:py-24">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="animate-fade-up font-display text-3xl font-semibold text-ink md:text-4xl">
+            {availability.heading}
+          </h2>
+          <p className="mt-3 animate-fade-up text-lg text-ink/70">{availability.intro}</p>
+
+          <div className="mt-10 animate-fade-up rounded-3xl bg-background/80 p-8 shadow-sm md:p-10">
+            <p className="font-display text-lg font-semibold text-ink">
+              {availability.hoursLabel}
+            </p>
+            <p className="mt-1 text-[17px] text-ink/80">{availability.hours}</p>
+
+            <div className="mt-6 flex justify-center">
+              <ChipGroup label="Mode of therapy" items={about.modes} center />
+            </div>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-8 max-w-4xl animate-fade-up overflow-hidden rounded-3xl bg-background/80 p-2 shadow-sm">
+          <iframe
+            src={site.bookingUrl}
+            title={availability.bookingIframeTitle}
+            className="h-150 w-full rounded-2xl border-0"
+            loading="lazy"
+          />
+        </div>
+        <a
+          href={site.bookingUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 inline-block text-sm text-ink/60 underline underline-offset-2 hover:text-ink"
+        >
+          {availability.bookingFallbackLabel}
+        </a>
+      </div>
+    </section>
+  )
+}
+
+export default Availability

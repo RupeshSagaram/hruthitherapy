@@ -10,7 +10,7 @@ function Hero() {
             {hero.headline}
           </h1>
           <a
-            href="#contact"
+            href="#availability"
             className="mt-10 inline-block rounded-full bg-rose px-7 py-3.5 font-display font-semibold text-ink transition-opacity hover:opacity-90"
           >
             {hero.cta}

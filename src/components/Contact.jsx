@@ -1,51 +1,53 @@
-import { about, contact, site } from '../data/content'
-import ChipGroup from './ChipGroup'
+import { contact } from '../data/content'
 
 function Contact() {
   return (
-    <section id="contact" className="bg-rose/10">
-      <div className="mx-auto max-w-5xl px-6 py-16 text-center md:py-24">
-        <div className="mx-auto max-w-2xl">
-          <h2 className="animate-fade-up font-display text-3xl font-semibold text-ink md:text-4xl">
-            {contact.heading}
-          </h2>
-          <p className="mt-3 animate-fade-up text-lg text-ink/70">{contact.intro}</p>
+    <section id="contact" className="bg-lilac/10">
+      <div className="mx-auto max-w-2xl px-6 py-16 text-center md:py-24">
+        <h2 className="animate-fade-up font-display text-3xl font-semibold text-ink md:text-4xl">
+          {contact.heading}
+        </h2>
+        <p className="mt-3 animate-fade-up text-lg text-ink/70">{contact.intro}</p>
 
-          <div className="mt-10 animate-fade-up rounded-3xl bg-background/80 p-8 shadow-sm md:p-10">
-            <p className="font-display text-lg font-semibold text-ink">
-              {contact.hoursLabel}
+        <div className="mt-10 animate-fade-up space-y-6 rounded-3xl bg-background/80 p-8 shadow-sm md:p-10">
+          <div>
+            <p className="text-sm font-semibold tracking-wide text-ink/50 uppercase">
+              {contact.phoneLabel}
             </p>
-            <p className="mt-1 text-[17px] text-ink/80">{contact.hours}</p>
+            <a
+              href={contact.phoneHref}
+              className="mt-1 inline-block text-lg text-ink transition-colors hover:text-rose"
+            >
+              {contact.phone}
+            </a>
+          </div>
 
-            <div className="mt-6 flex justify-center">
-              <ChipGroup label="Mode of therapy" items={about.modes} center />
-            </div>
+          <div>
+            <p className="text-sm font-semibold tracking-wide text-ink/50 uppercase">
+              {contact.emailLabel}
+            </p>
+            <a
+              href={`mailto:${contact.email}`}
+              className="mt-1 inline-block text-lg text-ink transition-colors hover:text-rose"
+            >
+              {contact.email}
+            </a>
+          </div>
 
-            {/*
-              TODO: once the client provides an email address, add it here, e.g.:
-              <p className="mt-4 text-sm text-ink/60">
-                Or email <a href="mailto:REPLACE_ME" className="underline">REPLACE_ME</a>
-              </p>
-            */}
+          <div>
+            <p className="text-sm font-semibold tracking-wide text-ink/50 uppercase">
+              {contact.linkedinLabel}
+            </p>
+            <a
+              href={contact.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-lg text-ink transition-colors hover:text-rose"
+            >
+              {contact.linkedinDisplay}
+            </a>
           </div>
         </div>
-
-        <div className="mx-auto mt-8 max-w-4xl animate-fade-up overflow-hidden rounded-3xl bg-background/80 p-2 shadow-sm">
-          <iframe
-            src={site.bookingUrl}
-            title={contact.bookingIframeTitle}
-            className="h-150 w-full rounded-2xl border-0"
-            loading="lazy"
-          />
-        </div>
-        <a
-          href={site.bookingUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-3 inline-block text-sm text-ink/60 underline underline-offset-2 hover:text-ink"
-        >
-          {contact.bookingFallbackLabel}
-        </a>
       </div>
     </section>
   )

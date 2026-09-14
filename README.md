@@ -32,14 +32,10 @@ plain exported objects — headings, body text, card copy, hours, links. This
 is the file to edit for text changes; none of the wording is hardcoded in
 the components.
 
-Two things are intentionally left as placeholders for the client to provide:
-
-- **Her photo** — drop the real file at `src/assets/hruthika.jpg`. Until
-  it's there, the Hero and About sections automatically show a neutral
-  "Photo coming soon" placeholder box at the same size, so the layout never
-  breaks either way (see `src/lib/photo.js`).
-- **Her email** — `src/components/Contact.jsx` has a commented-out `TODO`
-  block showing exactly where and how to add it once the client provides one.
+**Her photo** is expected at `src/assets/hruthika.jpg`. If it's ever missing,
+the Hero and About sections automatically fall back to a neutral "Photo
+coming soon" placeholder box at the same size, so the layout never breaks
+either way (see `src/lib/photo.js`).
 
 ## Project structure
 
@@ -59,8 +55,9 @@ src/
     ├── Areas.jsx             # "areas I can help with" card grid
     ├── HowIWork.jsx          # the 5 therapeutic approaches, explained plainly
     ├── FirstSession.jsx      # what a first session looks like, 3 steps
-    ├── Contact.jsx           # hours, mode chips, booking CTA
-    ├── Footer.jsx            # name, profile link, copyright, crisis note
+    ├── Availability.jsx      # hours, mode chips, embedded booking calendar
+    ├── Contact.jsx           # phone, email, LinkedIn
+    ├── Footer.jsx            # name, copyright, crisis note
     └── ChipGroup.jsx          # small labelled pill group (languages, modes)
 ```
 

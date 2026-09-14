@@ -4,6 +4,7 @@ import About from './components/About'
 import Areas from './components/Areas'
 import HowIWork from './components/HowIWork'
 import FirstSession from './components/FirstSession'
+import Availability from './components/Availability'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -17,6 +18,7 @@ function App() {
         <Areas />
         <HowIWork />
         <FirstSession />
+        <Availability />
         <Contact />
       </main>
       <Footer />
