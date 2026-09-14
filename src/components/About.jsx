@@ -34,9 +34,9 @@ function About() {
             </p>
           ))}
 
-          <div className="mt-8 flex flex-wrap gap-8">
+          <div className="mt-8 flex flex-wrap gap-8 md:gap-16">
             <ChipGroup label="Languages" items={about.languages} />
-            <ChipGroup label="Mode of therapy" items={about.modes} />
+            <ChipGroup label="Mode of therapy" items={about.modes} center />
           </div>
         </div>
       </div>
