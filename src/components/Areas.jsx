@@ -1,6 +1,6 @@
 import { areas } from '../data/content'
 
-const tints = ['bg-rose/15', 'bg-lilac/15', 'bg-powder/15']
+const tints = ['bg-rose/25', 'bg-lilac/25', 'bg-powder/25']
 
 function Areas() {
   return (
