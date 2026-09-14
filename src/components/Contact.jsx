@@ -26,12 +26,7 @@ function Contact() {
             <p className="text-sm font-semibold tracking-wide text-ink/50 uppercase">
               {contact.emailLabel}
             </p>
-            <a
-              href={`mailto:${contact.email}`}
-              className="mt-1 inline-block text-lg text-ink transition-colors hover:text-rose"
-            >
-              {contact.email}
-            </a>
+            <p className="mt-1 text-lg text-ink">{contact.email}</p>
           </div>
 
           <div>
